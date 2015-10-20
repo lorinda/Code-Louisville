@@ -1,0 +1,30 @@
+/*No underlines on links */
+a {
+
+	text-decoration: none;
+}
+
+#wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+/******************************
+    Navigation
+*******************************/
+#site-title {
+	text-align: center;
+	display: inline-block;
+	color: grey;
+	margin: 0;
+}
+/******************************
+    Body Section Backgrounds
+*******************************/
+/*Footer Contact Us Section background****/
+#footer {
+    background:#b3070d !important;
+    position: relative;
+    z-index:-1;
+    padding:80px 0px;
+}
