@@ -1,30 +1,78 @@
+/******************************
+    Page Body
+*******************************/
+/*Adjusts page margins/width */
+#wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 0%;
+}
+/******************************
+    Navigation
+*******************************/
 /*No underlines on links */
 a {
 
 	text-decoration: none;
 }
 
-#wrapper {
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 0 5%;
+/*Adjusts the navigation spacing*/
+nav {
+	width:100%;
+	top:130px !important;
+	z-index:99999 !important;
+	height:auto;
+	line-height:80px;
+	margin-bottom:0px !important;
+	position: fixed !important;
 }
+/*Adjusts the timing of the text ease in*/
+.fixed {
+	top:0px !important;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;	
+	-o-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}	
 /******************************
-    Navigation
+    Body Section Text/Backgrounds
 *******************************/
-#site-title {
-	text-align: center;
-	display: inline-block;
-	color: grey;
-	margin: 0;
+/*Section 1: The Firm*/
+#section1 {
+
+	background:#b3070d !important;
+	position: relative;
+	z-index:-1;
+	padding:80px 0px;
 }
-/******************************
-    Body Section Backgrounds
-*******************************/
-/*Footer Contact Us Section background****/
+#section1, #section1 h1, #section1 h2, #section1 h3, #section1 h4, #section1 h5, #section1 h6, #section1 .info, #section1 a, #section1 .bigheader { color:#fff !important }
+#section1 .counter-line, #section1 .services-line { 
+	border-color: #fff !important; 
+}
+/*Section2: Our Attorneys*/
+#section2 {
+	background: #fafafa !important;
+	position: relative;
+	z-index:-1;
+	padding:80px 0px;
+}
+
+/*Section3: Practice Areas*/
+#section3 {
+	background: #fafafa !important;
+	position: relative;
+	z-index:-1;
+	padding:80px 0px;
+}
+/*Footer Contact Us Section background*/
 #footer {
     background:#b3070d !important;
     position: relative;
     z-index:-1;
     padding:80px 0px;
+}
+#footer, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer .info, #footer a, #footer .bigheader { color:#fff !important; }
+#footer .counter-line, #footer .services-line { 
+	border-color: #fff !important; 
 }
