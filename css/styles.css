@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 
-/*Adjusts the navigation spacing*/
+/*Adjusts the navigation spacing/position*/
 nav {
 	width:100%;
 	top:130px !important;
@@ -36,13 +36,23 @@ nav {
 	transition: all 400ms ease-in-out;
 }	
 /******************************
+    Main Picture
+*******************************/
+#main_pic{
+	width: 100%;
+	margin-top: 5%;
+}
+
+/******************************
     Body Section Text/Backgrounds
 *******************************/
+/*Slider*/
+
 /*Section 1: The Firm*/
 #section1 {
 
 	background:#b3070d !important;
-	position: relative;
+	position: relative !important;
 	z-index:-1;
 	padding:80px 0px;
 }
