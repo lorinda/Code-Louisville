@@ -102,19 +102,9 @@ nav {
 	z-index:-1;
 	padding:5% 0;
 }
-/******************************
-    Attorney Picture Section
-*******************************/
-.laquita{
-	width: 20%;
-	height: auto;
-	float: left;
+
 }
-#section2 .brian #brian_pic {
-	width: 20%;
-	height: auto;
-	float: right;
-}
+
 /*Section3: Practice Areas*/
 #section3 {
 	background: #fafafa !important;
