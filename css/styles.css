@@ -1,5 +1,5 @@
 /******************************
-    Page Body
+    Page Body Size
 *******************************/
 /*Adjusts page margins/width */
 #wrapper {
@@ -7,23 +7,55 @@
 	margin: 0 auto;
 	padding: 0 0%;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+/*************************
+	Page Body Styles
+*************************/
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4em;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Helvetica Neue, Arial;
+  font-size: 1.0em;
+  line-height: 1.5em;
+}
+
 /******************************
     Navigation
 *******************************/
-/*No underlines on links */
+/*No underlines on links (text-decoration)*/
 a {
 
 	text-decoration: none;
+	color: #6b6b6b;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
 }
 
 /*Adjusts the navigation spacing/position*/
 nav {
 	width:100%;
-	top:130px !important;
+	top:0px !important;
 	z-index:99999 !important;
 	height:auto;
-	line-height:80px;
-	margin-bottom:0px !important;
+	line-height:2.0em;
+	margin-bottom:0% !important;
 	position: fixed !important;
 }
 /*Adjusts the timing of the text ease in*/
@@ -54,9 +86,12 @@ nav {
 	background:#b3070d !important;
 	position: relative !important;
 	z-index:-1;
-	padding:80px 0px;
+	padding:5% 0;
 }
-#section1, #section1 h1, #section1 h2, #section1 h3, #section1 h4, #section1 h5, #section1 h6, #section1 .info, #section1 a, #section1 .bigheader { color:#fff !important }
+#section1, #section1 h1, #section1 h2, #section1 h3, #section1 h4, #section1 h5, 
+#section1 h6, #section1 .info, #section1 a, #section1 .bigheader { 
+	color:#fff !important 
+}
 #section1 .counter-line, #section1 .services-line { 
 	border-color: #fff !important; 
 }
@@ -65,24 +100,41 @@ nav {
 	background: #fafafa !important;
 	position: relative;
 	z-index:-1;
-	padding:80px 0px;
+	padding:5% 0;
 }
-
+/******************************
+    Attorney Picture Section
+*******************************/
+.laquita{
+	width: 20%;
+	height: auto;
+	float: left;
+}
+#section2 .brian #brian_pic {
+	width: 20%;
+	height: auto;
+	float: right;
+}
 /*Section3: Practice Areas*/
 #section3 {
 	background: #fafafa !important;
 	position: relative;
 	z-index:-1;
-	padding:80px 0px;
+	padding:5% 0;
+	width: 100%;
 }
+
 /*Footer Contact Us Section background*/
 #footer {
     background:#b3070d !important;
     position: relative;
     z-index:-1;
-    padding:80px 0px;
+    padding:5% 0;
 }
-#footer, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer .info, #footer a, #footer .bigheader { color:#fff !important; }
+#footer, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, 
+#footer h6, #footer .info, #footer a, #footer .bigheader { 
+	color:#fff !important; 
+}
 #footer .counter-line, #footer .services-line { 
 	border-color: #fff !important; 
 }
