@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: Helvetica, Helvetica Neue, Arial;
-  font-size: 1.0em;
+  font-size: 100%;
   line-height: 1.5em;
 }
 
@@ -75,6 +75,9 @@ nav {
 	margin-top: 5%;
 }
 
+
+
+
 /******************************
     Body Section Text/Backgrounds
 *******************************/
@@ -117,14 +120,97 @@ nav {
 /*Footer Contact Us Section background*/
 #footer {
     background:#b3070d !important;
-    position: relative;
-    z-index:-1;
     padding:5% 0;
 }
+
 #footer, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, 
 #footer h6, #footer .info, #footer a, #footer .bigheader { 
 	color:#fff !important; 
 }
 #footer .counter-line, #footer .services-line { 
-	border-color: #fff !important; 
+	border-color: #fff !important;
+}
+#footer button{
+	color: #000 !important;
+}
+
+/******************************
+    Text Size
+*******************************/
+
+@media only screen and (max-width : 320px) {
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width : 480px){
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width : 768px) {
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 768px) and(max-width : 1024px) {
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+}
+@media only screen  and (min-width : 1024px) {
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
 }
