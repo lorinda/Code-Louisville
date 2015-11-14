@@ -29,10 +29,13 @@ html {
 
 body {
   font-family: Helvetica, Helvetica Neue, Arial;
-  font-size: 1.0em;
+  font-size: 100%;
   line-height: 1.5em;
 }
 
+h1, h2, h3, h4, h5, p {
+	text-align: center;
+}
 /******************************
     Navigation
 *******************************/
@@ -67,13 +70,31 @@ nav {
 	-o-transition: all 400ms ease-in-out;
 	transition: all 400ms ease-in-out;
 }	
+
+#call {
+	width: 150px;
+}
 /******************************
     Main Picture
 *******************************/
 #main_pic{
 	width: 100%;
-	margin-top: 5%;
 }
+.slogan{
+	position: relative; 
+	color: #000;
+	text-align: center; 
+	width: 100%; 
+	padding-top: 2%;
+	background:#b3070d !important;
+	color: #FFF;
+}
+.slider{
+	width: 100%; /* for IE 6 */
+}
+
+
+
 
 /******************************
     Body Section Text/Backgrounds
@@ -86,7 +107,7 @@ nav {
 	background:#b3070d !important;
 	position: relative !important;
 	z-index:-1;
-	padding:5% 0;
+	padding: 5% 0;
 }
 #section1, #section1 h1, #section1 h2, #section1 h3, #section1 h4, #section1 h5, 
 #section1 h6, #section1 .info, #section1 a, #section1 .bigheader { 
@@ -117,14 +138,97 @@ nav {
 /*Footer Contact Us Section background*/
 #footer {
     background:#b3070d !important;
-    position: relative;
-    z-index:-1;
     padding:5% 0;
 }
+
 #footer, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, 
 #footer h6, #footer .info, #footer a, #footer .bigheader { 
 	color:#fff !important; 
 }
 #footer .counter-line, #footer .services-line { 
-	border-color: #fff !important; 
+	border-color: #fff !important;
+}
+#footer button{
+	color: #000 !important;
+}
+
+/******************************
+    Text Size
+*******************************/
+
+@media only screen and (max-width : 320px) {
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width : 480px){
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width : 768px) {
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 768px) and(max-width : 1024px) {
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+}
+@media only screen  and (min-width : 1024px) {
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 15px;
+	}
 }
