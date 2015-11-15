@@ -28,7 +28,16 @@
 				});
 			});
 		</script>
-		
+		<script>
+			<!--Minimizes mobile menu on item click-->
+			jQuery(function() {
+				jQuery('.nav a').on('click', function(){ 
+					if(jQuery('.navbar-toggle').css('display') !='none'){
+						jQuery(".navbar-toggle").trigger( "click" );
+					}
+				});
+			});
+		</script>
 		
 		<title>Stokes &amp; Glass Law Firm</title>
 	  
@@ -37,7 +46,7 @@
 		<div>
 			<!-- Navigation-->
 			    <nav class="navbar navbar-default" role="navigation">
-				<!--<div class="container-fluid">-->
+				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -53,7 +62,7 @@
 					</div> <!--div class="navbar-header"-->
 					
 					  <!-- Collection of nav links and other content for toggling -->
-					<div id="navbarCollapse" class="collapse navbar-collapse pull-right">
+					<div id="navbarCollapse" class="collapse navbar-collapse pull-right fixed">
 					  <ul class="nav navbar-nav">
 						<li><a href="#" class="menu-item">HOME</a></li>
 						<li><a href="#section1" class="menu-item">THE FIRM</a></li>
@@ -61,8 +70,10 @@
 						<li><a href="#section3"class="menu-item">PRACTICE AREAS</a></li>
 						<li><a href="#footer" class="menu-item">CONTACT INFO</a></li>
 						<li><a href="tel:1-901-401-1000">CALL NOW: (901) 401-1000</a></li>
-						<li><a href="#"><img src="images/FB-f-Logo__blue_29.png"></a></li>
-						<li><a href="#"><img src="images/TwitterLogo_29.png"></a></li>
+						<li><a href="https://www.facebook.com/Stokes-Glass-PLLC-107315929290734/"><img src="images/FB-f-Logo__blue_29_grey.png" id="facebook" 
+							onmouseover="this.src='images/FB-f-Logo__blue_29.png';" onmouseout="this.src='images/FB-f-Logo__blue_29_grey.png';"></a></li>
+						<li><a href="https://twitter.com/stokesglasslaw"><img src="images/TwitterLogo_29_grey.png" id="twitter"
+							onmouseover="this.src='images/TwitterLogo_29.png';" onmouseout="this.src='images/TwitterLogo_29_grey.png';"></a></li>
 					 </ul>
 					</div>
 				</div><!--Container-fluid-->
@@ -222,7 +233,7 @@
 								</div>
 								<div class="form-group">
 									<label for="message">Message</label>
-									<textarea class="form-control" id="message"></textarea>
+									<textarea class="form-control" id="message" rows="3"></textarea>
 								</div>
 							   <div class="form-group">
 									<button type="submit">Submit</button>

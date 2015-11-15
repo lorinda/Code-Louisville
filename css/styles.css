@@ -74,12 +74,18 @@ nav {
 #call {
 	width: 150px;
 }
+/*
+Social Media Icon Rollover
+*/
+
+	
 /******************************
     Main Picture
 *******************************/
 #main_pic{
 	width: 100%;
 }
+
 .slogan{
 	position: relative; 
 	color: #000;
@@ -88,7 +94,12 @@ nav {
 	padding-top: 2%;
 	background:#b3070d !important;
 	color: #FFF;
+	margin-bottom: 0px;
 }
+.sloganText{
+	margin-bottom: 0px;
+}
+
 .slider{
 	width: 100%; /* for IE 6 */
 }
@@ -159,6 +170,7 @@ nav {
 @media only screen and (max-width : 320px) {
 	h1{
 		font-size: 25px;
+		
 	}
 	h2{
 		font-size: 20px;
