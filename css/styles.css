@@ -4,7 +4,8 @@
 /*Adjusts page margins/width */
 #wrapper {
 	max-width: 100%;
-	margin: 0 auto;
+	min-width: 100%;
+    margin: 0 auto;
 	padding: 0 0%;
 }
 
@@ -28,9 +29,9 @@ html {
 }
 
 body {
-  font-family: Helvetica, Helvetica Neue, Arial;
-  font-size: 100%;
-  line-height: 1.5em;
+    font-family: 'Lato', sans-serif, Arial; 
+    font-size: 100%;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -58,8 +59,9 @@ nav {
 	z-index:99999 !important;
 	height:auto;
 	line-height:2.0em;
-	margin-bottom:0% !important;
-	position: fixed !important;
+	margin-bottom:0 !important;
+	padding-bottom:0;
+    position: fixed !important;
 }
 /*Adjusts the timing of the text ease in*/
 .fixed {
@@ -74,9 +76,6 @@ nav {
 #call {
 	width: 150px;
 }
-/*
-Social Media Icon Rollover
-*/
 
 	
 /******************************
@@ -91,7 +90,7 @@ Social Media Icon Rollover
 	color: #000;
 	text-align: center; 
 	width: 100%; 
-	padding-top: 2%;
+	padding-top: 2% !important;
 	background:#b3070d !important;
 	color: #FFF;
 	margin-bottom: 0px;
@@ -101,12 +100,34 @@ Social Media Icon Rollover
 }
 
 .slider{
-	width: 100%; /* for IE 6 */
+	width: 100%;
 }
 
+/*
+PRACTICE AREASE
+*/
 
+.practice_area1{
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
 
+.practice_area2{
+    width: 200px;
+    position: absolute;
+    left: 250px;
+}
 
+.practice_area3{
+    width: 200px;
+    position: absolute;
+    left: 500px;
+}
+
+.practice_areas{
+    list-style: none;
+}
 /******************************
     Body Section Text/Backgrounds
 *******************************/
@@ -135,17 +156,32 @@ Social Media Icon Rollover
 	padding:5% 0;
 }
 
-}
-
 /*Section3: Practice Areas*/
 #section3 {
-	background: #fafafa !important;
+	background: #ede8e8 !important;
+	position: relative !important;
+	z-index:-1;
+	padding:5% 0;
+	width: 100%;
+}
+#section4 {
+	background-color: #fafafa !important;
 	position: relative;
 	z-index:-1;
 	padding:5% 0;
 	width: 100%;
 }
 
+/*Center Numbered Lists*/
+.list { 
+    text-align: center; 
+    list-style-position:inside;
+}
+
+.left{
+    text-align: left;
+    
+}
 /*Footer Contact Us Section background*/
 #footer {
     background:#b3070d !important;
@@ -168,7 +204,11 @@ Social Media Icon Rollover
 *******************************/
 
 @media only screen and (max-width : 320px) {
-	h1{
+    .site-title{
+        font-size: 12px;
+        
+    }
+    h1{
 		font-size: 25px;
 		
 	}
@@ -199,7 +239,8 @@ Social Media Icon Rollover
 	}
 }
 @media only screen and (max-width : 768px) {
-	h1{
+    
+    h1{
 		font-size: 30px;
 	}
 	h2{
@@ -214,7 +255,7 @@ Social Media Icon Rollover
 	}
 }
 @media only screen and (min-width: 768px) and(max-width : 1024px) {
-	h1{
+    h1{
 		font-size: 40px;
 	}
 	h2{
