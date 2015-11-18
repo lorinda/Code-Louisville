@@ -128,6 +128,12 @@ PRACTICE AREASE
 .practice_areas{
     list-style: none;
 }
+
+.img-responsive{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 /******************************
     Body Section Text/Backgrounds
 *******************************/
@@ -154,6 +160,9 @@ PRACTICE AREASE
 	position: relative;
 	z-index:-1;
 	padding:5% 0;
+/*    border-top: solid #000;*/
+    
+    
 }
 
 /*Section3: Practice Areas*/
@@ -164,6 +173,7 @@ PRACTICE AREASE
 	padding:5% 0;
 	width: 100%;
 }
+
 #section4 {
 	background-color: #fafafa !important;
 	position: relative;
@@ -255,6 +265,7 @@ PRACTICE AREASE
 	}
 }
 @media only screen and (min-width: 768px) and(max-width : 1024px) {
+   
     h1{
 		font-size: 40px;
 	}
