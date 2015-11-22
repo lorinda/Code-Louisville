@@ -73,10 +73,16 @@ nav {
 	transition: all 400ms ease-in-out;
 }	
 
-#call {
-	width: 150px;
+.call_now {
+    background: #e6e6e6;
+    margin: 0 0 0 15px;
+    width: 250px;
+    height: 51px;
+    top: -1px;
+    right: 0;
+    position: absolute;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.40);
 }
-
 	
 /******************************
     Main Picture
@@ -103,9 +109,9 @@ nav {
 	width: 100%;
 }
 
-/*
-PRACTICE AREASE
-*/
+/********************
+PRACTICE AREAS
+*********************/
 
 .practice_area1{
     width: 200px;
@@ -131,8 +137,7 @@ PRACTICE AREASE
 
 .img-responsive{
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
 /******************************
     Body Section Text/Backgrounds
@@ -146,6 +151,11 @@ PRACTICE AREASE
 	position: relative !important;
 	z-index:-1;
 	padding: 5% 0;
+    
+}
+
+#building_pic{
+    height: 100%;
 }
 #section1, #section1 h1, #section1 h2, #section1 h3, #section1 h4, #section1 h5, 
 #section1 h6, #section1 .info, #section1 a, #section1 .bigheader { 
@@ -247,6 +257,11 @@ PRACTICE AREASE
 	p{
 		font-size: 15px;
 	}
+    .mobile_no_show{
+        display: none;
+    }
+}
+
 }
 @media only screen and (max-width : 768px) {
     
