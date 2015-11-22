@@ -12,7 +12,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/styles.css">
         <!--Font-->
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
 	
 		
 		<!--JavaScript-->
@@ -73,7 +73,7 @@
 						
                         <li><a href="#section2" class="menu-item">OUR ATTORNEYS</a></li>
 						<li><a href="#footer" class="menu-item">CONTACT INFO</a></li>
-						<li><a href="tel:1-901-401-1000">CALL NOW: (901) 401-1000</a></li>
+						<li class="call_now"><a href="tel:1-901-401-1000">CALL NOW: (901) 401-1000</a></li>
 						<li><a href="https://www.facebook.com/Stokes-Glass-PLLC-107315929290734/"><img src="images/FB-f-Logo__blue_29_grey.png" id="facebook" 
 							onmouseover="this.src='images/FB-f-Logo__blue_29.png';" onmouseout="this.src='images/FB-f-Logo__blue_29_grey.png';"></a></li>
 						<li><a href="https://twitter.com/stokesglasslaw"><img src="images/TwitterLogo_29_grey.png" id="twitter"
@@ -104,18 +104,29 @@
 
 			<!--Code for "The Firm" Section 1-->
 			<section id="section1">
-				<h1>THE FIRM</h1>
-				<h2>Proudly serving the Greater Memphis Area</h2>
-				<h4>(Shelby County, Fayette County, Hardeman County &amp; Tipton County)</h4>
-                
-                <section id="section1Text">
-				
-				<p>STOKES &amp; GLASS, PLLC is a law firm located 
-				in the heart of Memphis, Tennessee in the White Station Tower also known as the 
-				I-Bank building.  Our firm's goal is to be accessible and affordable advocates 
-				in Court.  We desire to evolve the practice of law with the rapid growth of 
-				technology.  Visit our practice areas page for a list of our services.
-				</p>
+				<div class="container">	
+					<div class="row">
+                        <div class="col-md-6">
+				            <h1>THE FIRM</h1>
+				            <h2>Proudly serving the Greater <br>Memphis Area</h2>
+				            <h4>(Shelby County, Fayette County, Hardeman County &amp; Tipton County)</h4>
+                        </div>
+                        <div class="col-md-4">
+				            <section id="section1Text">
+                                <div class="mobile_no_show"><br><br></div>
+                                <p>STOKES &amp; GLASS, PLLC is a law firm located 
+				                in the heart of Memphis, Tennessee in the White Station Tower also known as the 
+				                I-Bank building.  Our firm's goal is to be accessible and affordable advocates 
+				                in Court.  We desire to evolve the practice of law with the rapid growth of 
+				                technology.  Visit our practice areas page for a list of our services.
+				                </p>
+                            </section>
+                        </div>
+               			<div class="col-md-2 mobile_no_show">
+                            <img class="img-responsive" src="images/White_Station_Tower_Memphis.jpg" id="building_pic" height="300" width="150">
+                        </div>
+                    </div>
+                </div>
 				</section>
 			</section>
 
@@ -405,7 +416,7 @@
 					<div class="row">
 						<div class="col-md-6">		
 							<br>	
-							<h4>White Station Tower, </h4><h5><b>Suite #618</b></h5>
+							<h4>White Station Tower (i Bank), </h4><h5><b>Suite #618</b></h5>
 							<h4>5050 Poplar Avenue<h4>
 							<h4>Memphis, TN 38157</h4>
 							
