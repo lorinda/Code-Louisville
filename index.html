@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!--Character encoding-->
-		<meta charset "utf-8">
+		<meta charset="utf-8">
 		<!-- Browser tab icon-->
 		<link href="images/browser_icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 		<!--For different screen sizes-->
@@ -41,6 +41,7 @@
 				});
 			});
 		</script>
+     
 		
 		<title>Stokes &amp; Glass Law Firm</title>
 	  
@@ -68,12 +69,11 @@
 					<div id="navbarCollapse" class="collapse navbar-collapse pull-right fixed">
 					  <ul class="nav navbar-nav">
 						<li><a href="#" class="menu-item">HOME</a></li>
-						<li><a href="#section1" class="menu-item">THE FIRM</a></li>
-						<li><a href="#practice_intro" class="menu-item">PRACTICE AREAS</a></li>
-						
-                        <li><a href="#section2" class="menu-item">OUR ATTORNEYS</a></li>
+						<li><a href="#the_firm" class="menu-item">THE FIRM</a></li>
+						<li><a href="#practice" class="menu-item">PRACTICE AREAS</a></li>
+				        <li><a href="#our_attorneys" class="menu-item">OUR ATTORNEYS</a></li>
 						<li><a href="#footer" class="menu-item">CONTACT INFO</a></li>
-                          <li class="call_now"><a href="tel:1-901-401-1000"><b>CALL NOW: (901) 401-1000</b></a></li>
+                        <li class="call_now"><a href="tel:1-901-401-1000"><b>CALL NOW: (901) 401-1000</b></a></li>
 						<li><a href="https://www.facebook.com/Stokes-Glass-PLLC-107315929290734/"><img src="images/FB-f-Logo__blue_29_grey.png" id="facebook" 
 							onmouseover="this.src='images/FB-f-Logo__blue_29.png';" onmouseout="this.src='images/FB-f-Logo__blue_29_grey.png';"></a></li>
 						<li><a href="https://twitter.com/stokesglasslaw"><img src="images/TwitterLogo_29_grey.png" id="twitter"
@@ -103,7 +103,7 @@
 			</div>
 
 			<!--Code for "The Firm" Section 1-->
-			<section id="section1">
+			<section id="the_firm">
 				<div class="container">	
 					<div class="row">
                         <div class="col-md-6">
@@ -114,24 +114,23 @@
                         <div class="col-md-4">
 				            <section id="section1Text">
                                 <div class="mobile_no_show"><br><br></div>
-                                <p>STOKES &amp; GLASS, PLLC is a law firm located 
+                                <p class="left">STOKES &amp; GLASS, PLLC is a law firm located 
 				                in the heart of Memphis, Tennessee in the White Station Tower also known as the 
 				                I-Bank building.  Our firm's goal is to be accessible and affordable advocates 
 				                in Court.  We desire to evolve the practice of law with the rapid growth of 
-				                technology.  Visit our practice areas page for a list of our services.
+				                technology.  View our practice areas below for a list of our services.
 				                </p>
                             </section>
                         </div>
                			<div class="col-md-2 mobile_no_show">
-                            <img class="img-responsive" src="images/White_Station_Tower_Memphis.jpg" id="building_pic" height="300" width="150">
+                            <!--Image Source: Wikipedia Commons-->
+                            <img  src="images/White_Station_Tower_Memphis.jpg" alt="picture of White Station Tower" id="building_pic" height="300" width="150">
                         </div>
                     </div>
                 </div>
-				</section>
 			</section>
-
-			<!--Practice Areas Intro Section practice_intro-->
-			<section id="practice_intro">
+			<!--Section: Practice Areas Intro Section-->
+			<section id="practice">
                 <br>
 				<h1>PRACTICE AREAS</h1>
 				<h2>What can we help you with today?</h2>
@@ -142,7 +141,7 @@
                             <ul class="practice_areas">
                                 <li>Adoptions</li>    
                                 <li>Auto Accidents</li>
-                                <li>Bankruptcy/Wage-earners</li>    
+                                <li><a href="#bankruptcy">Bankruptcy/Wage-earners</a></li>    
                                 <li>Business Formation (LLC, Inc.)</li>
                                 <li>Chapters 7, 11 and 13</li>
                                 <li>Child Support Establishment &amp; Disestablishments</li>
@@ -165,9 +164,8 @@
                                 <li>Habitual Motor Offenders</li>
                                 <li>Juvenile Court</li>
                                 <li>Non-Profit Organizations</li>
-                                
-
                             </ul>
+                           
                         </div>
                         <div class="col-md-4">
                            <ul class="practice_areas">
@@ -185,41 +183,50 @@
 
                             </ul>
                         </div>
+                        <h2>Scroll Down for additional information!</h2>
                     </div>
                 </div>
 			</section>
 
-		 <!--Code for "Our Attorneys" Section 2-->
+		 <!--Code for "Our Attorneys"-->
 		 <!--Responsive Picture Positioning-->
 		 <!--Classes in bootstrap.min.js-->
-			<section id="section2">
+			<section id="our_attorneys">
 				<h1>OUR ATTORNEYS</h1>
 				<h2>Meet the Attorneys at Stokes &amp; Glass, PLLC.</h2>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">		
-							<p>
-							<!--Class img-responsive in bootstrap.min.js-->
-								<img class="img-responsive" src="images/glass_lg.jpg">
-								<h3 class="member-name" align="center">Brian M. Glass</h3>
-								<p class="member-job" align="center">Managing Attorney</p>
-								<br>
-							</p>
+						<div class="col-md-6" id="brian_pic">		
+							<div class="col-md-2">
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                     <!--Class img-responsive in bootstrap.min.js-->
+                                    <img class="img-responsive" src="images/glass_lg.jpg" alt="Picture of Brian M. Glass">
+                                    <h3 class="member-name" align="center">Brian M. Glass</h3>
+                                    <p class="member-job" align="center">Managing Attorney</p>
+                                    <br>
+							     </p>
+                            </div>
 						</div>
-						<div class="col-md-6">		
-							<p>
-								<!--Class img-responsive in bootstrap.min.js-->
-								<img class="img-responsive" src="images/stokes_lg.jpg">
-								<h3 class="member-name" align="center">Laquita R. Stokes</h3>
-								<p class="member-job" align="center">Managing Attorney</p>
-							</p>
+						<div class="col-md-6" id="laquita_pic">		
+							<div class="col-md-2">
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <!--Class img-responsive in bootstrap.min.js-->
+                                    <img class="img-responsive" src="images/stokes_lg.jpg">
+                                    <h3 class="member-name" align="center">Laquita R. Stokes</h3>
+                                    <p class="member-job" align="center">Managing Attorney</p>
+                                </p>
+                            </div>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 			<!--Code for "Practice Areas" Section 3-->
-			<section id="section3">
+			<section id="bankruptcy">
 				<h2>BANKRUPTCY</h2>
 				<div class="container">
                     <div class="row">
@@ -234,10 +241,9 @@
                         </div>
                         <div class="col-md-6">
 
-                            <p class="left">Take back control of your money TODAY! 
+                            <p class="left">Take back control of your money TODAY!</p>
                                 <br>
-                                <br>
-                                We offer free consultations and payment plans for every budget. Allow our highly skilled 
+                            <p class="left">We offer free consultations and payment plans for every budget. Allow our highly skilled 
                                 attorneys to guide you through the bankruptcy process quickly and effectively so that you 
                                 can move forward with your financial life.</p>
                           
@@ -250,8 +256,8 @@
                             <ol>
                                 <b><li>Will I lose my money or property?</li></b>
                                 <p class="left">Many people think that they will lose their property if they file for bankruptcy. 
-                                    THAT IS NOT TRUE! Bankruptcy can stop repossession, foreclosure, garnishment, and bank levies.
-                                    Most of our clients do not lose any property through the bankruptcy process! Many times you can 
+                                    THAT IS NOT TRUE! Bankruptcy can stop repossession, foreclosure, garnishment, and bank levies.</p>
+                                <p class="left">Most of our clients do not lose any property through the bankruptcy process! Many times you can 
                                     file to reaffirm your debts or redeem your debts in a Chapter 7 case. Good bankruptcy lawyers 
                                     will protect your assets and discuss how to accomplish your financial goals before filing your 
                                     case. Our office does NOT file any cases without describing exactly how it will affect 
@@ -297,7 +303,7 @@
                     </div>
                 </div>
             </section>
-            <section id="section4">
+            <section id="child_support">
 				<div class="container">
                 <h2>CHILD SUPPORT &amp; CUSTODY</h2>
 				    <div class="row">
@@ -332,32 +338,31 @@
                         <h3>Facts about Tennessee Child Support Cases:</h3> 
                         <div class="col-md-6">
                             <ol>
-                                <li>Tennessee laws allow the Court to impute (increase) income for parents who are 
-                                    underemployed!</li> 
-                                <li>If a parent of a child (subject to a child support order) is married, the other spouse's 
-                                    income is not considered for the child support worksheet.</li> 
-                                <li>If a man finds out that he is NOT a child's father, after a child has been legitimated,
-                                    he is not automatically removed from that child's birth certificate.</li>
+                                <li><p class="left">Tennessee laws allow the Court to impute (increase) income for parents who are 
+                                    underemployed!</p></li> 
+                                <li><p class="left">If a parent of a child (subject to a child support order) is married, the other spouse's 
+                                    income is not considered for the child support worksheet.</p></li> 
+                                <li><p class="left">If a man finds out that he is NOT a child's father, after a child has been legitimated,
+                                    he is not automatically removed from that child's birth certificate.</p></li>
                             </ol>
                         </div>
                         <div class="col-md-6">
                             <ol start="4">
-                                <li>Children born during the marriage, who are not the biological child of the husband MUST
-                                    be disestablished through a divorce proceeding or the Juvenile Court.</li> 
-                                <li>One of the very few ways to terminate child support is to be married and living together.</li> 
-                                <li>Child Support is a non-discharegeable debt under the U.S. Bankruptcy Code.</li>
+                                <li><p class="left">Children born during the marriage, who are not the biological child of the husband MUST
+                                    be disestablished through a divorce proceeding or the Juvenile Court.</p></li> 
+                                <li><p class="left">One of the very few ways to terminate child support is to be married and living together.</p></li> 
+                                <li><p class="left">Child Support is a non-discharegeable debt under the U.S. Bankruptcy Code.</p></li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="section3">
+            <section id="injury">
                 <div class="container">
                     <h2>PERSONAL INJURY &amp; AUTO ACCIDENTS</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <h3 class="left">Let us help you get the settlement you deserve</h3>
-
                             <p class="left">We all know someone who has been seriously injured in a car wreck. When you have been seriously 
                 injured in an auto accident, you deserve to be compensated for your claim. Most people cannot 
                 immediately go back to work and have trouble paying their current bills. Don't let medical bills 
@@ -367,19 +372,20 @@
                         </div>
                         <div class="col-md-6">
                             <h3>Follow this checklist if you get in a car wreck in Tennessee:</h3> 
-                            <ol>
+                            <ol><p class="left">
                                 <li>Call the police and make a report! Don't leave the accident!</li>  
                                 <li>Follow instructions by medical professionals at the scene.</li>
                                 <li>Get contact information for any witnesses that saw the accident.</li>
                                 <li>Go directly to your doctor if you have any pain or discomfort.</li> 
                                 <li>Report your accident to the insurance company.</li>
                                 <li>Call Stokes &amp; Glass for a FREE consultation with one of our attorneys!</li>
+                                </p>
                             </ol>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="section4">
+            <section id="divorce">
             
 				<h2>DIVORCE</h2>
 				<h3>Contested or Uncontested</h3>
@@ -430,15 +436,15 @@
 							<form action="send_form_email.php" method="post" class="form-horizontal">
 								<div class="form-group">
 									<label for="name">Name</label>
-									<input type="text" class="form-control" id="name">
+									<input type="text" class="form-control" id="name" required>
 								</div>
 								<div class="form-group">
 									<label for="email">Email</label>
-										<input type="email" class="form-control" id="email">
+										<input type="email" class="form-control" id="email" required placeholder="Enter a valid email address">
 								</div>
 								<div class="form-group">
 									<label for="subject" >Subject</label>
-										<input type="text" class="form-control" id="subject">
+										<input type="text" class="form-control" id="subject" required>
 								</div>
 								<div class="form-group">
 									<label for="message">Message</label>
