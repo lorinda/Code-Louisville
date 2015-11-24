@@ -1,23 +1,54 @@
-$(function(){
+
+/* Fade in the Slogan on page load */
+$(document).ready(function () {
 	$('.sloganText').hide().fadeIn('slow');
 });
 
-/* Load DIV After Scrollbar Is Moved 100px */
-	$(window).scroll( function() {
-        if ( $(window).scrollTop() > 5000 ) {
-           sec1Show(); /* calls sec1 Function below */
-        }
-		if ($(window).scrollTop() >6000){
-			sec1Hide();
-		}
-});
-	
-texts = $("#section1Text").fadeTo(0, 0.05);
 
-$('#wrapper').scroll(function(d,h) {
-    texts.each(function(i) {
-        a = $(this).offset().top + $(this).height();
-        b = $('#portfolio').scrollTop() + $('.container').height();
-        if (a < b) $(this).fadeTo(500,1);
+$(document).ready(function () {
+    
+    /* When the window scrolls ... */
+    $(window).scroll(function () {
+    
+        /* Check scroll location of Practice areas */
+        $('.practice_areas').each(function (i) {
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* When completely visible in the window, fade them in */
+            if (bottom_of_window > bottom_of_object) {
+                
+                $(this).animate({'opacity': '1'}, 500);
+                    
+            }
+            
+        });
+    
     });
+    
+});
+
+$(document).ready(function () {
+    
+    /* When the window scrolls ... */
+    $(window).scroll(function () {
+    
+        /* Check scroll location of paragraphs */
+        $('p').each(function (i) {
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* When visible, fade them in */
+            if (bottom_of_window > bottom_of_object) {
+                
+                $(this).animate({'opacity': '1'}, 500);
+                    
+            }
+            
+        });
+    
+    });
+    
 });
