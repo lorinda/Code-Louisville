@@ -8,21 +8,26 @@
 		<!--For different screen sizes-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		
-		<!--CSS-->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/styles.css">
-        <!--Font-->
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+		<!--CSS for Bootstrap-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <!--Font: Google-Lato-->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' 
+              rel='stylesheet' type='text/css' >
+        <!--Site-specific CSS-->
+        <link rel="stylesheet" href="css/styles.css">
 	
 		
-		<!--JavaScript-->
+		<!--JavaScript jQuery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<!--Bootstrap JS for mobile menu-->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<!--JavaScript JavaScript for mobile menu-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" 
+                integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous">
+        </script>
 		<script src="js/displayFade.js" type="text/javascript"></script>
 		
 		<script>
-		<!--Changes menu item color to red on hover-->
+		<!--Changes menu item color to red on hover/ black on move-->
 			$(document).ready(function(){
 				$('.menu-item').hover(function(){
 					$(this).css('color','red');
@@ -48,7 +53,7 @@
 	</head>
 	<body> 
 		<div>
-			<!-- Navigation-->
+			<!-- Navigation using Bootstrap-->
 			    <nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -63,9 +68,9 @@
 						</button>
 						<span class="site-title"><img src="images/SG_logo_40.png">STOKES &amp; GLASS, PLLC
 						</span>
-					</div> <!--div class="navbar-header"-->
+					</div>
 					
-					  <!-- Collection of nav links and other content for toggling -->
+					<!-- Collection of nav links and other content for toggling -->
 					<div id="navbarCollapse" class="collapse navbar-collapse pull-right fixed">
 					  <ul class="nav navbar-nav">
 						<li><a href="#" class="menu-item">HOME</a></li>
@@ -80,10 +85,10 @@
 							onmouseover="this.src='images/TwitterLogo_29.png';" onmouseout="this.src='images/TwitterLogo_29_grey.png';"></a></li>
 					 </ul>
 					</div>
-				</div><!--Container-fluid-->
-			</nav>
+				</div><!--end Container-fluid-->
+			</nav><!--end navigation-->
 		</div>
-		<div id="wrapper">
+		<div id="wrapper"> <!--main body div-->
 			
 			<!-- Code for Image Slider at top of page-->
 			<div class="slogan">
@@ -92,13 +97,6 @@
 			<div class="slider">
 				<img src="images/stokesandglass_big.jpg" id="main_pic" alt="Picture of Stokes and Glass"/>
                 <div class="row" align="center"> 
-                
-                <!--Buttons Commented Out    
-                <img src="images/DivorceFamLaw.png" alt="Divorce and Family Law" class="practice_area1">
-                <img src="images/FinancialAdv.png" alt="Financial Advocacy" class="practice_area2">
-                <img src="images/CivTraffVio.png" alt="Civic and Traffic Violations" class="practice_area3">
-                -->
-                
                 </div>
 			</div>
 
@@ -112,7 +110,7 @@
 				            <h4>(Shelby County, Fayette County, Hardeman County &amp; Tipton County)</h4>
                         </div>
                         <div class="col-md-4">
-				            <section id="section1Text">
+                            <section id="section1Text">
                                 <div class="mobile_no_show"><br><br></div>
                                 <p class="left">STOKES &amp; GLASS, PLLC is a law firm located 
 				                in the heart of Memphis, Tennessee in the White Station Tower also known as the 
@@ -137,8 +135,7 @@
                 <div class="container">	
 					<div class="row">
 						<div class="col-md-4">
-               
-                            <ul class="practice_areas">
+							<ul class="practice_areas">
                                 <li>Adoptions</li>    
                                 <li>Auto Accidents</li>
                                 <li><a href="#bankruptcy">Bankruptcy/Wage-earners</a></li>    
@@ -215,7 +212,7 @@
                             <div class="col-md-8">
                                 <p>
                                     <!--Class img-responsive in bootstrap.min.js-->
-                                    <img class="img-responsive" src="images/stokes_lg.jpg">
+                                    <img class="img-responsive" src="images/stokes_lg.jpg" alt="Picture of Laquita R. Stokes">
                                     <h3 class="member-name" align="center">Laquita R. Stokes</h3>
                                     <p class="member-job" align="center">Managing Attorney</p>
                                 </p>
@@ -292,10 +289,12 @@
                                 <b><li>Will I ever be able to buy anything after bankruptcy?</li></b>
                                 <p class="left">Of course! This is the question most people have incorrect information about. Back in the 1980s, when 
                                     consumer credit was given through the banks, bankruptcy could haunt your credit for years. THIS IS 
-                                    NOT TRUE ANYMORE! Bankruptcy does stay on your credit reports for 8 years after the last date of 
+                                    NOT TRUE ANYMORE!</p> 
+                                    
+                                <p class="left">Bankruptcy does stay on your credit reports for 8 years after the last date of 
                                     activity. However, it does not stop you from obtaining credit. You can buy a home, car, or furniture 
                                     after bankruptcy. There are mortgage companies and auto finance companies that have specific plans 
-                                    for individuals with bankruptcy on their credit reports. Many of my clients see their credit scores 
+                                    for individuals with bankruptcy on their credit reports. Many of our clients see their credit scores 
                                     INCREASE after their bankruptcy is complete! This is because your DEBT TO INCOME ratio decreases 
                                     dramatically. <br>Less collectable debts on your credit report = better credit scores.<br></p>
                             </ol>
@@ -429,7 +428,9 @@
 							<a href="tel:1-901-401-1000"><h5>(901) 401-1000</h5></a>
 							<h5>lstokes@stokesandglass.com</h5>
 							<div class="map" align="center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.73849334167!2d-89.89504238569727!3d35.11324028033062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f8464884ee875%3A0x8319c8327d81a82b!2s5050+Poplar+Ave%2C+Memphis%2C+TN+38137!5e0!3m2!1sen!2sus!4v1447012719386" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+							
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.73849334167!2d-89.89504238569727!3d35.11324028033062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f8464884ee875%3A0x8319c8327d81a82b!2s5050+Poplar+Ave%2C+Memphis%2C+TN+38137!5e0!3m2!1sen!2sus!4v1447012719386" 
+							width="300" height="225" frameborder="0" style="border:0" alt="Google Location Map" allowfullscreen></iframe>
 							</div>
 						</div>
 						<div class="col-md-6">		

@@ -79,6 +79,11 @@ nav {
     position: fixed !important;
    
 }
+
+/*Sets the default text to black*/
+.navbar-default .navbar-nav>li>a {
+    color:  #000;   
+}
 /*Adjusts the timing of the text ease in*/
 .fixed {
 	top:0px !important;
