@@ -9,7 +9,7 @@ if(isset($_POST['email'])) {
 
 	$email_to = "lorinda.peoples@yahoo.com";
 
-	$email_subject = "Your email subject line";
+	$email_subject = "Stokes & Glass Form Contact".$_POST['subject'];;
 
 	
 
@@ -30,3 +30,104 @@ if(isset($_POST['email'])) {
 		die();
 
 	}
+    
+    // validation expected data exists
+
+	if(!isset($_POST['name']) ||
+
+		!isset($_POST['email']) ||
+
+		!isset($_POST['subject']) ||
+
+		!isset($_POST['message'])) {
+
+		died('Please fill in all items.');		
+
+	}
+
+	
+
+	$name = $_POST['name']; // required
+
+	$email = $_POST['email']; // required
+
+	$subject = $_POST['subject']; // required
+
+	$message = $_POST['message']; // required
+
+	
+
+	$error_message = "";
+
+	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+  if(!preg_match($email_exp,$email)) {
+
+  	$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+
+  }
+
+	$string_exp = "/^[A-Za-z .'-]+$/";
+
+  if(!preg_match($string_exp,$name)) {
+
+  	$error_message .= 'The First Name you entered does not appear to be valid.<br />';
+
+  }
+
+  if(strlen($subject) < 2) {
+
+  	$error_message .= 'The Subject you entered do not appear to be valid.<br />';
+
+  }
+
+  if(strlen($message) < 5) {
+
+  	$error_message .= 'The Message you entered do not appear to be valid.<br />';
+
+  }
+    if(strlen($error_message) > 0) {
+
+  	died($error_message);
+
+  }
+
+	$email_message = "Form details below.\n\n";
+
+	
+
+	function clean_string($string) {
+
+	  $bad = array("content-type","bcc:","to:","cc:","href");
+
+	  return str_replace($bad,"",$string);
+
+	}
+
+	
+
+	$email_message .= "Name: ".clean_string($name)."\n";
+
+	$email_message .= "Email: ".clean_string($email)."\n";
+
+	$email_message .= "Subject: ".clean_string($subject)."\n";
+
+	$email_message .= "Message: ".clean_string($message)."\n";
+
+	
+
+	
+
+// create email headers
+
+$headers = "From: ".$name."\r\n Reply-To: ".$email."\r\n";
+mail($email_to, $subject, $email_message, $headers);  
+header('Location: http://stokesandglass.com/index2.html');
+
+}
+?>
+
+
+
+
+
